@@ -8,7 +8,7 @@ app
   .prepare()
   .then(() => {
     const server = express()
-    const PORT = process.env.PORT || 3000
+    const PORT = process.env.PORT || 5000
 
     server.get('*', (req, res) => {
       return handle(req, res)
