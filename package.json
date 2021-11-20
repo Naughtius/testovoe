@@ -1,0 +1,37 @@
+{
+  "name": "distum",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "next": "10.0.3",
+    "next-images": "^1.7.0",
+    "next-videos": "1.4.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-input-mask": "^2.0.4",
+    "react-slick": "^0.28.1",
+    "react-use": "^17.2.4",
+    "sass": "^1.43.4",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "8.1.0",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "eslint": "7.17.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.3.0",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "identity-obj-proxy": "3.0.0",
+    "postcss-preset-env": "6.7.0",
+    "prettier": "2.0.2",
+    "prop-types": "^15.7.2"
+  }
+}

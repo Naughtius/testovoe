@@ -1,0 +1,121 @@
+@import '../../styles/mixins.scss';
+
+.button {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: $transitionDefaultDuration all ease;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  width: 180px;
+  border-radius: 50px;
+
+  &._onlyicon {
+    padding: 0;
+  }
+
+  &._orange {
+    background-color: $c-orange;
+    border: 1px solid $c-orange;
+    color: $c-white;
+
+    &._outline {
+      background-color: $c-white;
+      color: $c-orange;
+
+      path {
+        fill: $c-orange;
+      }
+
+      &:hover {
+        background-color: $c-orange;
+        color: $c-white;
+
+        path {
+          fill: $c-white;
+        }
+      }
+    }
+
+    &:hover {
+      color: $c-orange;
+
+      path {
+        fill: $c-orange;
+      }
+    }
+
+    path {
+      fill: $c-white;
+    }
+  }
+
+  &._primary {
+    background-color: $c-purple;
+    border: 1px solid $c-purple;
+    color: $c-white;
+
+    &._outline {
+      background-color: $c-white;
+      color: $c-purple;
+
+      path {
+        fill: $c-purple;
+      }
+
+      &:hover {
+        background-color: $c-purple;
+        color: $c-white;
+
+        path {
+          fill: $c-white;
+        }
+      }
+    }
+
+    &:hover {
+      color: $c-purple;
+
+      path {
+        fill: $c-purple;
+      }
+    }
+
+    path {
+      fill: $c-white;
+    }
+  }
+
+  &:hover {
+    background-color: $c-white;
+  }
+
+  @include media-xs {
+    padding: 8px 13px;
+  }
+
+  &_icon_right {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &_icon_left {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &_icon_center {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.without_icon {
+  justify-content: center;
+}

@@ -1,0 +1,21 @@
+@import '../../styles/mixins.scss';
+
+.container {
+  position: relative;
+  max-width: 419px;
+  width: 100%;
+}
+
+.input {
+  height: 48px;
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: 4px;
+  color: $c-text;
+
+  &::placeholder {
+    color: $c-brown-light;
+  }
+}

@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+// Media
+@mixin media-xs {
+  @media (max-width: $breakpointXs) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media (max-width: $breakpointSm) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media (max-width: $breakpointMd) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media (max-width: $breakpointLg) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media (max-width: $breakpointXl) {
+    @content;
+  }
+}
+
+@mixin container {
+  padding-left: 300px;
+  padding-right: 300px;
+  width: 100%;
+  min-width: 375px;
+
+  @include media-xl {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @include media-md {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include media-sm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

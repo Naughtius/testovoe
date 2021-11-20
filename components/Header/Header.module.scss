@@ -1,0 +1,99 @@
+@import '../../styles/mixins.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+  padding: 30px 300px;
+  @include container();
+  &_wrapper {
+    display: flex;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 131px;
+
+  &_item {
+    margin-right: 47px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_label {
+      font-weight: 500;
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      color: $c-text;
+    }
+
+    &_arrow {
+      margin-left: 4px;
+      transition: $transitionDefaultDuration all ease;
+    }
+
+    &:hover &_arrow {
+      transform: rotate(180deg);
+    }
+
+    &_dropdown {
+      display: none;
+    }
+
+    &:hover &_label {
+      color: $c-purple;
+    }
+
+    &:hover path {
+      fill: $c-purple;
+    }
+
+    &_dropdown {
+      &:hover {
+        display: flex;
+      }
+
+      &_label {
+        font-size: 16px;
+        color: $c-text;
+        margin-bottom: 15px;
+        font-family: 'Roboto', sans-serif;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          color: $c-purple;
+        }
+      }
+    }
+
+    &:hover &_dropdown {
+      display: flex;
+      position: absolute;
+      top: 23px;
+      left: -20px;
+      padding-left: 24px;
+      padding-right: 17px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      background-color: $c-white;
+      box-shadow: 0px 4px 0px #e2cefe;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 169px;
+    }
+  }
+}

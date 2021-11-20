@@ -1,0 +1,38 @@
+@import '../../styles/mixins.scss';
+
+.footer {
+  height: 197px;
+  @include container();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $c-purple;
+
+  @include media-lg {
+    flex-wrap: wrap;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  &_item {
+    margin-right: 54px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_label {
+      font-weight: 500;
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      color: $c-white;
+    }
+  }
+}

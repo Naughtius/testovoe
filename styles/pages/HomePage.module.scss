@@ -1,0 +1,43 @@
+@import '../mixins.scss';
+
+.wrapper {
+  background-color: $c-grey-light;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.h1 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 37px;
+  line-height: 130%;
+}
+
+.content {
+  margin-top: 200px;
+  text-align: center;
+  flex: 1 0 auto;
+  padding-bottom: 200px;
+  background-color: #e5e5e5;
+}
+
+.descr {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 23px;
+  padding-bottom: 56px;
+  color: $c-grey-dark;
+  width: 650px;
+  margin: auto;
+  line-height: 160%;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.slider {
+  @include container();
+}
