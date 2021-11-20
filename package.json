@@ -2,12 +2,13 @@
   "name": "distum",
   "version": "1.0.0",
   "scripts": {
-    "start": "next start",
+    "start": "node server.js",
     "build": "next build",
     "dev": "next dev"
   },
   "dependencies": {
     "lodash": "^4.17.21",
+    "express": "^4.17.1",
     "next": "10.0.3",
     "next-images": "^1.7.0",
     "next-videos": "1.4.0",
